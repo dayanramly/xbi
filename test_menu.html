@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Metronic Admin Theme #4 | Admin Dashboard 2</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Preview page of Metronic Admin Theme #4 for statistics, charts, recent events and reports" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/layouts/layout4/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/layouts/layout4/css/custom_search.css" rel="stylesheet" type="text/css" />
+
+        <!-- END THEME LAYOUT STYLES -->
+    <!-- END HEAD -->
+
+    <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="assets/layouts/layout4/img/logo-light.png" alt="logo" class="logo-default" /> </a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN PAGE TOP -->
+                <div class="page-top">
+                    <!-- BEGIN HEADER SEARCH BOX -->
+                    <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+                    <form class="search-form" action="page_general_search_2.html" method="GET">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
+                            <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- END HEADER SEARCH BOX -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-user dropdown-dark">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="username username-hide-on-mobile"> Admin </span>
+                                    <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                                    <img alt="" class="img-circle" src="assets/layouts/layout4/img/avatar9.jpg" /> </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END PAGE TOP -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <div class="page-sidebar-menu">
+                        <div class="portlet menu-panel">
+                            <div class="portlet-title">
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"> </a>
+                                    <a href="" class="fullscreen"> </a>
+                                    <a href="javascript:;" class="remove"> </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                                    <li class="nav-item  start active open">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="icon-book-open"></i>
+                                            <span class="title">Run Report</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                    <li class="nav-item ">
+                                        <a href="reportAdmin.action">
+                                            <i class="icon-settings"></i>
+                                            <span class="title">Administration</span>
+                                            <span class="arrow "></span>
+
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="icon-settings"></i> General Administra..<span class="arrow"></span>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="dataExport.action">
+                                                            Export Reports
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="dataImport.action">
+                                                            Import Reports
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="schedulerAdmin.action">
+                                                            Scheduler
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="search.action">
+                                                            Search
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="editProperties.action">
+                                                            Settings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="analyzeReportLogs.action">
+                                                            Statistics
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="viewReportLogs.action">
+                                                            View Logs
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="icon-user"></i> User Administration <span class="arrow"></span>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="listGroups.action"><i class="icon-link"></i> Groups</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="listUsers.action"><i class="icon-user-following"></i> Users</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-bar-chart"></i>
+                                                    Report Admin
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="listAlerts.action"><i class="icon-bell"></i> Alerts</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="listCharts.action"><i class="icon-graph"></i> Charts</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="listDataSources.action"><i class="icon-globe"></i> DataSources</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="listReports.action"><i class="icon-link"></i> Query</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="listReportScript.action"><i class="icon-wrench"></i> Report Script</a>
+                                                    </li>                                                
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="#">
+                                            <i class="icon-settings"></i>
+                                            <span class="title">Dashboard</span>
+                                            <span class="arrow "></span>
+                                            
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="listDashboards.action">
+                                                    <i class="icon-settings"></i>
+                                                    Dashboard List
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="listDashboardGroup.action">
+                                                    <i class="icon-settings"></i>
+                                                    Dashboard Group
+                                                </a>
+                                            </li>                                       
+                                        </ul>
+                                    </li>
+                                    <li>
+                                    <li class="nav-item ">
+                                        <a href="listScheduledReports.action">
+                                            <i class="icon-rocket"></i>
+                                            <span class="title">Scheduled Reports</span>
+                                            <span class="arrow "></span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li>
+                                    <li class="nav-item ">
+                                        <a href="listScheduledTask.action">
+                                            <i class="icon-clock"></i>
+                                            <span class="title">Task Scheduler</span>
+                                            <span class="arrow "></span>
+                                            
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="listScheduledTaskLog.action">
+                                                    <i class="icon-list"></i>
+                                                    Scheduled Task Log
+                                                </a>
+                                            </li>
+                                        </ul>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-sidebar-menu">
+                        <div class="portlet filter-panel">
+                            <div class="portlet-title">
+                                <div class="caption"><i class="fa fa-filter"></i>
+                                    <p id="filter-title">Filters</p>
+                                </div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"> </a>
+                                    <a href="" class="fullscreen"> </a>
+                                    <a href="javascript:;" class="remove"> </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="sidebar-search-wrapper">
+                                    <form class="sidebar-search" action="page_general_search_3.html" method="POST">
+                                        <a href="javascript:;" class="remove">
+                                            <i class="icon-close"></i>
+                                        </a>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">
+                                                <a href="javascript:;" class="btn submit">
+                                                    <i class="icon-magnifier"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEAD-->
+                    <div class="page-head">
+                        <!-- BEGIN PAGE TITLE -->
+                        <div class="page-title">
+                            <h1>Home
+                                <small>Xpress BI homepage</small>
+                            </h1>
+                        </div>
+                        <!-- END PAGE TITLE -->
+                    </div>
+                    <!-- END PAGE HEAD-->
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                    </ul>
+                    <!-- END PAGE BREADCRUMB -->
+                    <div class="row" id="sortable_portlets">
+                        <div class="col-md-4 column sortable">
+                            <div class="portlet portlet-sortable sm-portlet-sortable light bordered">
+                                <div class="portlet-title">
+                                    <div class="dashboard-stat2 sm-sortable-dashboard bordered">
+                                        <div class="display">
+                                            <div class="number">
+                                                <h3 class="font-green-sharp">
+                                                    <span data-counter="counterup" data-value="7800">0</span>
+                                                    <small class="font-green-sharp">$</small>
+                                                </h3>
+                                                <small>TOTAL PROFIT</small>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="icon-pie-chart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress-info">
+                                            <div class="progress">
+                                                <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                                    <span class="sr-only">76% progress</span>
+                                                </span>
+                                            </div>
+                                            <div class="status">
+                                                <div class="status-title"> progress </div>
+                                                <div class="status-number"> 76% </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- empty sortable porlet required for each columns! -->
+                            <div class="portlet portlet-sortable-empty"> </div>
+                        </div>
+                        <div class="col-md-4 column sortable">
+                            <div class="portlet portlet-sortable sm-portlet-sortable light bordered">
+                                <div class="portlet-title">
+                                    <div class="dashboard-stat2 sm-sortable-dashboard bordered">
+                                        <div class="display">
+                                            <div class="number">
+                                                <h3 class="font-red-haze">
+                                                    <span data-counter="counterup" data-value="1349">0</span>
+                                                </h3>
+                                                <small>NEW FEEDBACKS</small>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="icon-like"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress-info">
+                                            <div class="progress">
+                                                <span style="width: 85%;" class="progress-bar progress-bar-success red-haze">
+                                                    <span class="sr-only">85% change</span>
+                                                </span>
+                                            </div>
+                                            <div class="status">
+                                                <div class="status-title"> change </div>
+                                                <div class="status-number"> 85% </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- empty sortable porlet required for each columns! -->
+                            <div class="portlet portlet-sortable-empty"> </div>
+                        </div>
+                        <div class="col-md-4 column sortable">
+                            <div class="portlet portlet-sortable sm-portlet-sortable light bordered">
+                                <div class="portlet-title">
+                                    <div class="dashboard-stat2 sm-sortable-dashboard bordered">
+                                        <div class="display">
+                                            <div class="number">
+                                                <h3 class="font-blue-sharp">
+                                                    <span data-counter="counterup" data-value="567"></span>
+                                                </h3>
+                                                <small>NEW ORDERS</small>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="icon-basket"></i>
+                                            </div>
+                                        </div>
+                                        <div class="progress-info">
+                                            <div class="progress">
+                                                <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
+                                                    <span class="sr-only">45% grow</span>
+                                                </span>
+                                            </div>
+                                            <div class="status">
+                                                <div class="status-title"> grow </div>
+                                                <div class="status-number"> 45% </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- empty sortable porlet required for each columns! -->
+                            <div class="portlet portlet-sortable-empty"> </div>
+                        </div>
+                        <div class="col-md-6 column sortable">
+                            <div class="portlet portlet-sortable light">
+                                <div class="portlet-title">
+                                    <div class="caption caption-md">
+                                        <i class="icon-bar-chart font-dark hide"></i>
+                                        <span class="caption-subject font-dark bold uppercase">Member Activity</span>
+                                        <span class="caption-helper">weekly stats...</span>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="btn-group btn-group-devided" data-toggle="buttons">
+                                            <label class="btn btn-transparent blue-oleo btn-no-border btn-outline btn-circle btn-sm active">
+                                                <input type="radio" name="options" class="toggle" id="option1">Today</label>
+                                            <label class="btn btn-transparent blue-oleo btn-no-border btn-outline btn-circle btn-sm">
+                                                <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                                            <label class="btn btn-transparent blue-oleo btn-no-border btn-outline btn-circle btn-sm">
+                                                <input type="radio" name="options" class="toggle" id="option2">Month</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="row number-stats margin-bottom-30">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="stat-left">
+                                                <div class="stat-chart">
+                                                    <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+                                                    <div id="sparkline_bar"></div>
+                                                </div>
+                                                <div class="stat-number">
+                                                    <div class="title"> Total </div>
+                                                    <div class="number"> 2460 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="stat-right">
+                                                <div class="stat-chart">
+                                                    <!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+                                                    <div id="sparkline_bar2"></div>
+                                                </div>
+                                                <div class="stat-number">
+                                                    <div class="title"> New </div>
+                                                    <div class="number"> 719 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-scrollable table-scrollable-borderless">
+                                        <table class="table table-hover table-light">
+                                            <thead>
+                                                <tr class="uppercase">
+                                                    <th colspan="2"> MEMBER </th>
+                                                    <th> Earnings </th>
+                                                    <th> CASES </th>
+                                                    <th> CLOSED </th>
+                                                    <th> RATE </th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td class="fit">
+                                                    <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar4.jpg"> </td>
+                                                <td>
+                                                    <a href="javascript:;" class="primary-link">Brain</a>
+                                                </td>
+                                                <td> $345 </td>
+                                                <td> 45 </td>
+                                                <td> 124 </td>
+                                                <td>
+                                                    <span class="bold theme-font">80%</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fit">
+                                                    <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar5.jpg"> </td>
+                                                <td>
+                                                    <a href="javascript:;" class="primary-link">Nick</a>
+                                                </td>
+                                                <td> $560 </td>
+                                                <td> 12 </td>
+                                                <td> 24 </td>
+                                                <td>
+                                                    <span class="bold theme-font">67%</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fit">
+                                                    <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar6.jpg"> </td>
+                                                <td>
+                                                    <a href="javascript:;" class="primary-link">Tim</a>
+                                                </td>
+                                                <td> $1,345 </td>
+                                                <td> 450 </td>
+                                                <td> 46 </td>
+                                                <td>
+                                                    <span class="bold theme-font">98%</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fit">
+                                                    <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar7.jpg"> </td>
+                                                <td>
+                                                    <a href="javascript:;" class="primary-link">Tom</a>
+                                                </td>
+                                                <td> $645 </td>
+                                                <td> 50 </td>
+                                                <td> 89 </td>
+                                                <td>
+                                                    <span class="bold theme-font">58%</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- empty sortable porlet required for each columns! -->
+                            <div class="portlet portlet-sortable-empty"> </div>
+                        </div>
+                    </div>
+                    <!-- END PAGE BASE CONTENT -->
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        <!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script> 
+<script src="assets/global/plugins/ie8.fix.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/pages/scripts/portlet-draggable.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+    </body>
+
+</html>
