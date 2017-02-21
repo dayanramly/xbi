@@ -1,0 +1,208 @@
+.page-sidebar{
+	background: transparent;
+}
+.page-sidebar .page-sidebar-menu{
+	background: #ffffff;
+}
+/* styling for menu panel */
+.page-sidebar .page-sidebar-menu .menu-panel .portlet-title{
+	margin-bottom: 0;
+    padding: 0 15px;
+    border-bottom: 0;
+}
+.page-sidebar .page-sidebar-menu .menu-panel .portlet-body ul.page-sidebar-menu{
+	margin-top: 0;
+}
+/* styling for filter panel */
+.page-sidebar .page-sidebar-menu .filter-panel{
+	background: #ffffff;
+}
+.page-sidebar .page-sidebar-menu .filter-panel .portlet-title{
+	padding: 12px 15px;
+}
+.page-sidebar .page-sidebar-menu .filter-panel .portlet-title .caption p{
+	color: #678098;
+	font-size: 14px;
+	font-weight: 400;
+	display: inline-block;
+	margin: 0;
+}
+.page-sidebar .page-sidebar-menu .filter-panel .portlet-title .caption i{
+	color: #b7c9d6;
+	font-size: 18px;
+	text-shadow: none;
+	font-weight: 300;
+	top: 2px;
+	margin-left: 5px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.page-sidebar .page-sidebar-menu .filter-panel .portlet-body{
+	padding: 0 10px 5px;
+}
+.page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .filter-panel .portlet-title .caption p#filter-title{
+	display: none;
+}
+.page-sidebar .page-sidebar-menu .filter-panel .portlet-body .sidebar-search-wrapper .sidebar-search .input-group input.form-control{
+    border-bottom: 1px solid #ddd;
+}
+.page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .filter-panel .portlet-body .sidebar-search-wrapper .sidebar-search.open .input-group{
+	width: 210px;
+	position: relative;
+	z-index: 1;
+	margin-left: 24px;
+	padding: 12px 0; 
+	background: white;
+}
+.page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .filter-panel .portlet-body .sidebar-search-wrapper .sidebar-search.open {
+	height: 40px;
+	margin-top: 15px;
+	margin-bottom: 14px;
+}
+/* end of styling filter panel */
+
+.page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper, .page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-search-wrapper {
+	border: 0 !important; 
+}
+.page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper:before, .page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper:after, .page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper:before, .page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper:after,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-search-wrapper:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-search-wrapper:after {
+	content: " ";
+	display: table; 
+}
+.page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper:after, .page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper:after,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-search-wrapper:after {
+	clear: both; 
+}
+.page-sidebar .sidebar-search,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search {
+	padding: 0;
+	margin: 22px 18px 22px 18px; 
+}
+.page-sidebar .sidebar-search .remove,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .remove {
+	display: none; 
+}
+.page-sidebar .sidebar-search .remove > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .remove > i {
+	font-size: 16px; 
+}
+.page-sidebar .sidebar-search .input-group,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px; 
+}
+.page-sidebar .sidebar-search .input-group .form-control,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group .form-control {
+	border: 0;
+	font-size: 14px;
+	padding: 0;
+	height: auto;
+	line-height: auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px; 
+}
+.page-sidebar .sidebar-search .input-group .input-group-btn .btn,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group .input-group-btn .btn {
+	padding: 2px 0 0 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 100% 3px; 
+}
+.page-sidebar .sidebar-search .input-group .input-group-btn .btn > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group .input-group-btn .btn > i {
+	font-size: 15px; 
+}
+.page-sidebar .sidebar-search.sidebar-search-bordered,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.sidebar-search-bordered {
+	margin: 25px 18px 25px 18px; 
+}
+.page-sidebar .sidebar-search.sidebar-search-bordered .input-group .form-control,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.sidebar-search-bordered .input-group .form-control {
+	font-size: 13px;
+	padding: 6px 8px; 
+}
+.page-sidebar .sidebar-search.sidebar-search-bordered .input-group .input-group-btn .btn,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.sidebar-search-bordered .input-group .input-group-btn .btn {
+	margin-right: 6px; 
+}
+@media (min-width: 992px) {
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li.sidebar-search-wrapper:hover {
+		width: 54px !important; 
+		background: white;
+		box-shadow: none;
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search .input-group {
+		border-color: transparent;
+		margin-left: -4px; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search .input-group .form-control {
+		display: none; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search .input-group .input-group-btn .btn {
+		display: block; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.sidebar-search-bordered .input-group {
+		padding: 5px 0 3px 0; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open {
+		height: 40px;
+		margin-top: 15px;
+		margin-bottom: 14px; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group {
+		width: 210px;
+		position: relative;
+		z-index: 1;
+		margin-left: 24px;
+		padding: 10px 0; 
+		background: white;
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group .form-control {
+		background: none;
+		border: 0;
+		display: block;
+		padding: 8px 8px; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group .input-group-btn .btn {
+		display: block;
+		margin-right: 8px;
+		margin-top: 1px; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .remove {
+		background-repeat: no-repeat;
+		width: 11px;
+		height: 11px;
+		margin: 20px -5px 8px -7px;
+		display: block;
+		float: left; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open.sidebar-search-bordered {
+		height: 38px;
+		margin-top: 23px;
+		margin-bottom: 23px; 
+	}
+	.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open.sidebar-search-bordered .input-group {
+		padding: 0; 
+	}
+	.page-sidebar-closed.page-sidebar-reversed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li.sidebar-search-wrapper:hover, .page-sidebar-closed.page-sidebar-reversed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li.sidebar-toggler-wrapper:hover {
+		margin-left: 0; 
+	}
+	.page-sidebar-closed.page-sidebar-reversed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group {
+		margin-left: -227px; 
+	}
+	.page-sidebar-closed.page-sidebar-reversed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .input-group .input-group-btn .btn {
+		margin-right: 10px !important; 
+	}
+	.page-sidebar-closed.page-sidebar-reversed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .sidebar-search.open .remove {
+		margin: 9px 4px 12px -16px  !important;
+		float: right !important; 
+	}
+}
