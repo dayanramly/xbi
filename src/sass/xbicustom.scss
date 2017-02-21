@@ -1,9 +1,6 @@
 .page-sidebar{
 	background: transparent;
 }
-.page-sidebar .page-sidebar-menu{
-	background: #ffffff;
-}
 /* styling for menu panel */
 .page-sidebar .page-sidebar-menu .menu-panel .portlet-title{
 	margin-bottom: 0;
@@ -13,10 +10,8 @@
 .page-sidebar .page-sidebar-menu .menu-panel .portlet-body ul.page-sidebar-menu{
 	margin-top: 0;
 }
+
 /* styling for filter panel */
-.page-sidebar .page-sidebar-menu .filter-panel{
-	background: #ffffff;
-}
 .page-sidebar .page-sidebar-menu .filter-panel .portlet-title{
 	padding: 12px 15px;
 }

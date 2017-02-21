@@ -1,0 +1,36 @@
+/* here you can put your own css to customize and override the theme */
+.page-sidebar {
+	.page-sidebar-menu {
+		.filter-panel {
+			.portlet-title{
+				border-bottom: 1px solid #545454;
+				.caption{
+					i{
+						color: #ffffff !important;
+					}
+					p#filter-title{
+						color: #c6cdd4;
+					}
+				}
+			}
+			.portlet-body{
+				.sidebar-search{
+					margin: 22px 10px;
+					.input-group{
+						input.form-control{	
+							background: transparent;
+							border-bottom: 1px solid #545454 !important;
+						}
+						.input-group-btn{
+							a{
+								i{
+									color: #ffffff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
