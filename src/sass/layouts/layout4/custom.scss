@@ -5,3 +5,51 @@
 .page-sidebar .page-sidebar-menu .filter-panel{
 	background: #ffffff;
 }
+.navbar-custom{
+	height: 65px !important;
+	min-height: 65px !important;
+	.page-header-inner {
+		.page-logo{
+			height: 65px;
+			a{
+				img{
+					margin-top: 25px !important;
+				}
+			}
+			.menu-toggler{
+				margin-top: 25px; 
+			}
+		}
+		.page-top{
+			.search-form{
+				margin-top: 16px;
+			}
+			.top-menu{
+				.navbar-nav{
+					li{
+						&.dropdown-user{
+							height: 65px;
+							a{
+								padding: 20px 10px 13px;
+							}
+						}
+						&.dropdown-extended{
+							height: 65px;
+							a{
+								padding: 23px 12px 20px;
+							}
+							&.fullscreen-toggle{
+								a{
+									padding: 22px 12px;
+									&:hover{
+										background-color: #f9fafc;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,11 +1,36 @@
+.default-row{
+	padding: 0 15px;
+	.column{
+		padding: 1px !important;
+	}	
+}
+.page-content-fullscreen{
+	margin-left: 0 !important;
+	width: 100% !important;
+}
+.page-head{
+	.page-fullscreen{
+		float: right;
+		display: inline-block;
+		padding: 10px;
+		display: none;
+		a{
+			i{
+				font-size: 20px;
+				color: #697882;
+			}
+		}
+	}
+}
+
 .page-sidebar{
 	background: transparent;
 }
 /* styling for menu panel */
 .page-sidebar .page-sidebar-menu .menu-panel .portlet-title{
 	margin-bottom: 0;
-    padding: 0 15px;
-    border-bottom: 0;
+	padding: 0 15px;
+	border-bottom: 0;
 }
 .page-sidebar .page-sidebar-menu .menu-panel .portlet-body ul.page-sidebar-menu{
 	margin-top: 0;
@@ -39,7 +64,7 @@
 	display: none;
 }
 .page-sidebar .page-sidebar-menu .filter-panel .portlet-body .sidebar-search-wrapper .sidebar-search .input-group input.form-control{
-    border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
 .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed .filter-panel .portlet-body .sidebar-search-wrapper .sidebar-search.open .input-group{
 	width: 210px;
@@ -206,8 +231,8 @@
 }
 .sm-portlet-sortable .portlet-title{
 	border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 .sm-portlet-sortable .portlet-title .sm-sortable-dashboard{
 	margin-bottom: 0;

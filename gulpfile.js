@@ -102,7 +102,8 @@ gulp.task('images', function(){
 
 gulp.task('default', ['browser-sync'], function(){
     gulp.watch('src/sass/xbicustom.scss', ['sass-custom']);
-    gulp.watch('src/sass/**/*.scss', ['sass']);
+    // gulp.watch('src/sass/**/*.scss', ['sass']);
+    gulp.watch('src/assets/***/**/*.js', ['scripts']);
     gulp.watch(['*.html'], ['bs-reload']);
 });
 
