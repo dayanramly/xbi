@@ -1,14 +1,16 @@
 var fullScreen = function() {
-	$('.navbar-custom').hide();
 	$('.page-sidebar-wrapper').hide();
-	$('.page-container').css('margin-top', 0);
+	$('.page-head').hide();
+	$('.page-breadcrumb').hide();
 	$('.page-content').addClass('page-content-fullscreen');
 	$('.page-fullscreen').show();
+	$('.fullscreen-full').attr("onclick","unfullScreen()");
 }
 var unfullScreen = function() {
-	$('.navbar-custom').show();
 	$('.page-sidebar-wrapper').show();
-	$('.page-container').css('margin-top', '75px');
+	$('.page-head').show();
+	$('.page-breadcrumb').show();
 	$('.page-content').removeClass('page-content-fullscreen');
 	$('.page-fullscreen').hide();
+	$('.fullscreen-full').attr("onclick","fullScreen()");
 }

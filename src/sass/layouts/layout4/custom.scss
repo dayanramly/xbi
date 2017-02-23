@@ -6,43 +6,47 @@
 	background: #ffffff;
 }
 .navbar-custom{
-	height: 65px !important;
-	min-height: 65px !important;
+	height: 50px !important;
+	min-height: 50px !important;
 	.page-header-inner {
 		.page-logo{
-			height: 65px;
+			height: 50px;
 			a{
 				img{
-					margin-top: 25px !important;
+					margin-top: 15px !important;
 				}
 			}
 			.menu-toggler{
-				margin-top: 25px; 
+				margin-top: 17px; 
 			}
 		}
 		.page-top{
+			height: 50px;
 			.search-form{
-				margin-top: 16px;
+				margin-top: 9px;
 			}
 			.top-menu{
 				.navbar-nav{
 					li{
 						&.dropdown-user{
-							height: 65px;
+							height: 50px;
 							a{
-								padding: 20px 10px 13px;
+								padding: 13px 10px 5px;
 							}
 						}
 						&.dropdown-extended{
-							height: 65px;
+							height: 50px;
 							a{
-								padding: 23px 12px 20px;
+								padding: 15px 12px 13px;
 							}
 							&.fullscreen-toggle{
 								a{
-									padding: 22px 12px;
+									padding: 14px 12px;
 									&:hover{
 										background-color: #f9fafc;
+									}
+									&:active, &:focus, &:visited{
+										background-color: transparent;
 									}
 								}
 							}
