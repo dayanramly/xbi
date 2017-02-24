@@ -1,16 +1,16 @@
 .default-row{
 	padding: 0 15px;
 	.column{
-		padding: 1px !important;
+		padding: 1px 2px !important;
 	}
 	.col-md-6{
-		padding: 1px 3px !important;
+		padding: 1px 4px !important;
 	}
 }
+.portlet-sortable{
+	margin-bottom: 8px;
+}
 .layout-row{
-	.portlet-sortable{
-		margin-bottom: 0;
-	}
 	.portlet-sortable-empty{
 		border: 1px dashed #ccc;
 		margin: 5px 1px 10px 1px;
@@ -23,7 +23,7 @@
 }
 .sm-portlet-sortable{
 	padding: 0px !important;
-	margin-bottom: 0;
+	margin-bottom: 3px;
 }
 .sm-portlet-sortable .portlet-title{
 	border-bottom: 0;
