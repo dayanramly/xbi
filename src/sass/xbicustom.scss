@@ -16,6 +16,20 @@
 		margin: 5px 1px 10px 1px;
 	}
 }
+
+// sortable and resizeable
+.grid-stack-item{
+	.grid-stack-item-content{
+		left: 5px !important;
+		right: 5px !important;
+		.portlet.light{
+			border: 0 !important;
+			.sm-sortable-dashboard{
+				border: 0 !important;
+			}
+		}
+	}
+}
 // portlet sortable
 .portlet-sortable-empty{
 	border: 1px dashed #ccc;

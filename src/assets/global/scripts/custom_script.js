@@ -14,3 +14,9 @@ var unfullScreen = function() {
 	$('.page-fullscreen').hide();
 	$('.fullscreen-full').attr("onclick","fullScreen()");
 }
+var options = {
+	auto_height: true,
+	cellHeight: 66,
+	verticalMargin: 5
+};
+$('.grid-stack').gridstack(options);
