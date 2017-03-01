@@ -17,6 +17,40 @@
 	}
 }
 
+// filter on dropdown
+.filter-dropdown{
+	min-width: 250px;
+	li{
+		padding: 7px 10px;
+		&.filter-title{
+			h4{
+				margin-bottom: 0;
+				margin-top: 5px;
+			}
+		}
+		.form-group{
+			margin-bottom: 0;
+		}
+		.input-group{
+		}
+		&.divider{
+			padding: 0;
+		}
+		&:hover{
+			a{
+				&.btn-primary{
+					background-color: darken(#337ab7, 10%);
+				}
+			}
+		}
+		.btn-primary{
+			color: #ffffff !important;
+			&:hover, &:focus{
+			}
+		}
+	}
+}
+
 // sortable and resizeable
 .grid-stack-item{
 	.grid-stack-item-content{

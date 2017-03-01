@@ -20,3 +20,9 @@ var options = {
 	verticalMargin: 5
 };
 $('.grid-stack').gridstack(options);
+
+$('.filter-dropdown').click(function(e) {
+	if ($(e.target).is('[data-toggle=modal]')) {
+		$($(e.target).data('target')).modal("show")
+	}
+});

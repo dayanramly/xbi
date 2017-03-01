@@ -17,10 +17,14 @@
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/layouts/layout4/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/css/xbicustom.min.css" rel="stylesheet" type="text/css" />
 
@@ -420,6 +424,168 @@
                                             <span class="caption-helper">weekly stats...</span>
                                         </div>
                                         <div class="actions">
+                                            <div class="btn-group">
+                                                <a class="btn btn-circle blue btn-outline btn-sm" href="javascript:;" data-toggle="dropdown">
+                                                    <i class="fa fa-filter"></i> Filter
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu filter-dropdown hold-on-click pull-right">
+                                                    <li class="filter-title">
+                                                        <h4>Filter by</h4>
+                                                    </li>
+                                                    <li>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Filter...">
+                                                            <span class="input-group-btn">
+                                                                <a class="btn default" data-toggle="modal" href="#" data-target="#responsive">
+                                                                    <i class="icon-magnifier"></i>
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group">
+                                                            <select class="form-control select2">
+                                                                <option></option>
+                                                                <optgroup label="Alaskan">
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="HI" disabled="disabled">Hawaii</option>
+                                                                </optgroup>
+                                                                <optgroup label="Pacific Time Zone">
+                                                                    <option value="CA">California</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="WA">Washington</option>
+                                                                </optgroup>
+                                                                <optgroup label="Mountain Time Zone">
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="ND">North Dakota</option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </li>
+                                                    <li class="divider"> </li>
+                                                    <li>
+                                                        <a href="" class="btn btn-block btn-primary"> Apply </a>
+                                                    </li>
+                                                </ul>
+                                                <div id="responsive" class="modal fade" tabindex="-1" data-width="760">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                        <h4 class="modal-title">Responsive</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h4>Some Input</h4>
+                                                                <p>
+                                                                    <input class="form-control" type="text"> </p>
+                                                                <p>
+                                                                    <input class="form-control" type="text"> </p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h4>Some More Input</h4>
+                                                                <p>
+                                                                    <input class="form-control" type="text"> </p>
+                                                                <p>
+                                                                    <input class="form-control" type="text"> </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" data-dismiss="modal" class="btn btn-outline dark">Close</button>
+                                                        <button type="button" class="btn green">Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;"> </a>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="table-scrollable table-scrollable-borderless">
+                                            <table class="table table-hover table-light">
+                                                <thead>
+                                                    <tr class="uppercase">
+                                                        <th colspan="2"> MEMBER </th>
+                                                        <th> Earnings </th>
+                                                        <th> CASES </th>
+                                                        <th> CLOSED </th>
+                                                        <th> RATE </th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td class="fit">
+                                                        <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar4.jpg"> </td>
+                                                    <td>
+                                                        <a href="javascript:;" class="primary-link">Brain</a>
+                                                    </td>
+                                                    <td> $345 </td>
+                                                    <td> 45 </td>
+                                                    <td> 124 </td>
+                                                    <td>
+                                                        <span class="bold theme-font">80%</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fit">
+                                                        <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar5.jpg"> </td>
+                                                    <td>
+                                                        <a href="javascript:;" class="primary-link">Nick</a>
+                                                    </td>
+                                                    <td> $560 </td>
+                                                    <td> 12 </td>
+                                                    <td> 24 </td>
+                                                    <td>
+                                                        <span class="bold theme-font">67%</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fit">
+                                                        <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar6.jpg"> </td>
+                                                    <td>
+                                                        <a href="javascript:;" class="primary-link">Tim</a>
+                                                    </td>
+                                                    <td> $1,345 </td>
+                                                    <td> 450 </td>
+                                                    <td> 46 </td>
+                                                    <td>
+                                                        <span class="bold theme-font">98%</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fit">
+                                                        <img class="user-pic rounded" src="assets/layouts/layout4/img/avatar7.jpg"> </td>
+                                                    <td>
+                                                        <a href="javascript:;" class="primary-link">Tom</a>
+                                                    </td>
+                                                    <td> $645 </td>
+                                                    <td> 50 </td>
+                                                    <td> 89 </td>
+                                                    <td>
+                                                        <span class="bold theme-font">58%</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 column sortable">
+                                <div class="portlet portlet-sortable light">
+                                    <div class="portlet-title">
+                                        <div class="caption caption-md">
+                                            <i class="icon-bar-chart font-dark hide"></i>
+                                            <span class="caption-subject font-dark bold uppercase">Member Activity</span>
+                                            <span class="caption-helper">weekly stats...</span>
+                                        </div>
+                                        <div class="actions">
                                             <div class="btn-group btn-group-devided" data-toggle="buttons">
                                                 <label class="btn btn-transparent blue-oleo btn-no-border btn-outline btn-circle btn-sm active">
                                                     <input type="radio" name="options" class="toggle" id="option1">Today</label>
@@ -573,13 +739,18 @@
             <script src="assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
             <script src="assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
             <script src="assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+            <script src="assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
             <script src="assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
             <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
             <script src="assets/global/plugins/gridstack/gridstack.min.js" type="text/javascript"></script>
+            <script src="assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+            <script src="assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
             <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
+            <script src="assets/pages/scripts/components-select2.min.js" type="text/javascript"></script>
+            <script src="assets/pages/scripts/ui-extended-modals.min.js" type="text/javascript"></script>
             <script src="assets/global/scripts/custom_script.min.js" type="text/javascript"></script>
             <script src="assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
-            <script src="assets/pages/scripts/portlet-draggable.min.js" type="text/javascript"></script>
+            <!-- <script src="assets/pages/scripts/portlet-draggable.min.js" type="text/javascript"></script> -->
             <script src="assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
         </body>
 
