@@ -8,6 +8,7 @@
 .navbar-custom{
 	height: 50px !important;
 	min-height: 50px !important;
+	background: #2672c9 !important;
 	.page-header-inner {
 		.page-logo{
 			height: 50px;
@@ -24,6 +25,20 @@
 			height: 50px;
 			.search-form{
 				margin-top: 9px;
+				background: transparent !important;
+				.input-group{
+					border-color: #dddddd !important;
+					input{
+						color: #dddddd !important;
+					}
+					.input-group-btn{
+						a{
+							i{
+								color: #dddddd !important;
+							}
+						}
+					}
+				}
 			}
 			.top-menu{
 				.navbar-nav{
@@ -32,18 +47,36 @@
 							height: 50px;
 							a{
 								padding: 13px 10px 5px;
+								color: #dddddd !important;
+								&:hover{
+									background-color: #1f6cc3 !important;
+								}
+							}
+							ul.dropdown-menu-default{
+								li{
+									a{
+										padding: 8px 16px !important;
+									}
+								}
 							}
 						}
 						&.dropdown-extended{
 							height: 50px;
 							a{
 								padding: 15px 12px 13px;
+								i{
+									color: #dddddd !important;
+								}
+								&:hover{
+									background-color: #1f6cc3 !important;
+								}
 							}
 							&.fullscreen-toggle{
-								a{
+								a {
 									padding: 14px 12px;
+									color: #dddddd;
 									&:hover{
-										background-color: #f9fafc;
+										background-color: #1f6cc3 !important;
 									}
 									&:active, &:focus, &:visited{
 										background-color: transparent;
