@@ -17,6 +17,14 @@
 	}
 }
 
+.grid-stack{
+	.grid-stack-item{
+		.ui-resizable-se{
+			right: 5px;
+		}
+	}
+}
+
 // filter on dropdown
 .filter-dropdown{
 	min-width: 250px;
