@@ -7,9 +7,6 @@
 		padding: 1px 4px !important;
 	}
 }
-.portlet-sortable{
-	margin-bottom: 8px;
-}
 .layout-row{
 	.portlet-sortable-empty{
 		border: 1px dashed #ccc;
@@ -29,6 +26,25 @@
 }
 
 // filter on dropdown
+.btn-kpi-filter{
+	width: 100%;
+	.btn-sm-filter{
+		&.focus{
+			border-color: #94a0b2;
+			color: #fff;
+			background-color: #94a0b2;
+		}
+		&:nth-child(n+4){
+			margin-top: -1px;
+		}
+		&:nth-child(3n+1){
+			margin-left: 0px;
+		}
+		&:nth-child(3n+2){
+			margin-left: -1px;
+		}
+	}
+}
 .filter-dropdown{
 	min-width: 250px;
 	li{
