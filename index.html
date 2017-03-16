@@ -71,18 +71,69 @@
                                         <i class="icon-size-fullscreen"></i>
                                     </a>
                                 </li>
+                                <li class="dropdown dropdown-extended">
+                                    <a href="javascript:;">
+                                        <i class="icon-layers"></i>
+                                    </a>
+                                </li>
                                 <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
                                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                         <i class="icon-bell"></i>
                                         <span class="badge badge-success"> 7 </span>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu notification-menu">
+                                        <li class="external">
+                                            <h3><span class="bold">You have 2 </span> alerts</h3>
+                                        </li>
+                                        <li>
+                                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><ul class="dropdown-menu-list scroller" style="height: 300px; overflow: hidden; width: auto;" data-handle-color="#637283" data-initialized="1">
+                                                <li>
+                                                    <table class="table table-hover table-notification">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Condition   </th>
+                                                                <th>Value</th>
+                                                                <th>Report</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            
+                                                              <tr>
+                                                                  <td>PO Pending Receive</td>
+                                                                  <td>&gt; 5</td>
+                                                                  <td>10</td>
+                                                                  <td>
+                                                                    <a href="#" class="btn-notification">
+                                                                        PO Pending Report
+                                                                    </a>
+                                                                  </td>
+                                                              </tr>
+                                                            
+                                                              <tr>
+                                                                  <td>WMS Task Pending</td>
+                                                                  <td>&gt; 10</td>
+                                                                  <td>54</td>
+                                                                  <td>
+                                                                    <a href="#" class="btn-notification">
+                                                                        
+                                                                    </a>
+                                                                  </td>
+                                                              </tr>
+                                                                                                                    
+                                                        </tbody>
+                                                    </table>
+                                                </li>
+                                            </ul><div class="slimScrollBar" style="background: rgb(99, 114, 131); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 300px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                        </li>
+                                    </ul>
+<!--                                     <ul class="dropdown-menu">
                                         <li class="external">
                                             <h3>
                                                 <span class="bold">12 pending</span> notifications</h3>
                                             <a href="page_user_profile_1.html">view all</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="dropdown dropdown-user dropdown-dark">
                                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">

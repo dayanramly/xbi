@@ -71,6 +71,11 @@
 									background-color: #1f6cc3 !important;
 								}
 							}
+							&.open{
+								a.dropdown-toggle{
+									background-color: #1f6cc3 !important;
+								}
+							}
 							&.fullscreen-toggle{
 								a {
 									padding: 14px 12px;
