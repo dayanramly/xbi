@@ -5,6 +5,7 @@ var fullScreen = function() {
 	$('.page-content').addClass('page-content-fullscreen');
 	$('.page-fullscreen').show();
 	$('.fullscreen-full').attr("onclick","unfullScreen()");
+	localStorage.setItem("fullscreen", true);
 }
 var unfullScreen = function() {
 	$('.page-sidebar-wrapper').show();
@@ -13,6 +14,7 @@ var unfullScreen = function() {
 	$('.page-content').removeClass('page-content-fullscreen');
 	$('.page-fullscreen').hide();
 	$('.fullscreen-full').attr("onclick","fullScreen()");
+	localStorage.removeItem("fullscreen");
 }
 var options = {
 	auto_height: true,
@@ -26,3 +28,8 @@ $('.filter-dropdown').click(function(e) {
 		$($(e.target).data('target')).modal("show")
 	}
 });
+if(localStorage.fullscreen){
+	fullScreen();
+} else {
+	unfullScreen();
+}
