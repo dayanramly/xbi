@@ -337,9 +337,69 @@
                                                                 </h3>
                                                                 <small>TRIP STOP COUNT</small>
                                                             </div>
-                                                            <div class="icon">
-                                                                <i class="icon-pie-chart"></i>
-                                                            </div>
+                                                                <div class="icon actions" style="padding:0">
+                                                                    <div class="btn-group">
+                                                                        <a class="btn btn-circle blue btn-outline btn-sm btn-kpi-filter" href="javascript:;" data-toggle="dropdown">
+                                                                            <i class="fa fa-filter"></i> Filter
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </a>
+                                                                        <ul class="dropdown-menu filter-dropdown hold-on-click pull-right">
+                                                                            <li>
+                                                                                <div class="btn-group btn-kpi-filter" data-toggle="buttons">
+                                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                                        <input type="radio" class="toggle"> Today </label>
+                                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                                        <input type="radio" class="toggle"> Week </label>
+                                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                                        <input type="radio" class="toggle"> Month </label>
+                                                                                </div>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" placeholder="Filter...">
+                                                                                    <span class="input-group-btn">
+                                                                                        <a class="btn default" data-toggle="modal" href="#" data-target="#responsive">
+                                                                                            <i class="icon-magnifier"></i>
+                                                                                        </a>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-group">
+                                                                                    <select class="form-control select2">
+                                                                                        <option></option>
+                                                                                        <optgroup label="Alaskan">
+                                                                                            <option value="AK">Alaska</option>
+                                                                                            <option value="HI" disabled="disabled">Hawaii</option>
+                                                                                        </optgroup>
+                                                                                        <optgroup label="Pacific Time Zone">
+                                                                                            <option value="CA">California</option>
+                                                                                            <option value="NV">Nevada</option>
+                                                                                            <option value="OR">Oregon</option>
+                                                                                            <option value="WA">Washington</option>
+                                                                                        </optgroup>
+                                                                                        <optgroup label="Mountain Time Zone">
+                                                                                            <option value="AZ">Arizona</option>
+                                                                                            <option value="CO">Colorado</option>
+                                                                                            <option value="ID">Idaho</option>
+                                                                                            <option value="MT">Montana</option>
+                                                                                            <option value="NE">Nebraska</option>
+                                                                                            <option value="NM">New Mexico</option>
+                                                                                            <option value="ND">North Dakota</option>
+                                                                                            <option value="UT">Utah</option>
+                                                                                            <option value="WY">Wyoming</option>
+                                                                                        </optgroup>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="divider"> </li>
+                                                                            <li>
+                                                                                <a href="" class="btn btn-block btn-primary"> Apply </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
                                                         </div>
                                                         <div class="progress-info">
                                                             <div class="progress">

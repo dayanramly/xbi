@@ -331,7 +331,7 @@
                                 </div>
                                 <div class="portlet-body">
                                     <div class="sidebar-search-wrapper">
-                                        <form class="sidebar-search" action="page_general_search_3.html" method="POST">
+<!--                                         <div class="sidebar-search" action="page_general_search_3.html" method="POST">
                                             <a href="javascript:;" class="remove">
                                                 <i class="icon-close"></i>
                                             </a>
@@ -343,7 +343,49 @@
                                                     </a>
                                                 </span>
                                             </div>
-                                        </form>
+                                        </div> -->
+                                        <div class="form-group form-group-filter">
+                                            <label>Date From</label>
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="fa fa-calendar"></i>
+                                            </a>
+                                            <div class="input-group input-group-filter date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                                <input type="text" class="form-control" readonly>
+                                                <span class="input-group-btn">
+                                                    <button class="btn default" type="button">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group form-group-filter">
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="fa fa-toggle-down"></i>
+                                            </a>
+                                            <label>Organization</label>
+                                            <select class="form-control input-group-filter filter-select-dropdown">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group form-group-filter">
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="icon-magnifier"></i>
+                                            </a>
+                                            <label>Input</label>
+                                            <a href="javascript:;" class="remove">
+                                                <i class="icon-close"></i>
+                                            </a>
+                                            <div class="input-group input-group-filter ">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-btn">
+                                                    <button class="btn blue" type="button"><i class="icon-magnifier"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -387,69 +429,69 @@
                                                     </h3>
                                                     <small>TRIP STOP COUNT</small>
                                                 </div>
-                                        <div class="icon actions" style="padding:0">
-                                            <div class="btn-group">
-                                                <a class="btn btn-circle blue btn-outline btn-sm" href="javascript:;" data-toggle="dropdown">
-                                                    <i class="fa fa-filter"></i> Filter
-                                                    <i class="fa fa-angle-down"></i>
-                                                </a>
-                                                <ul class="dropdown-menu filter-dropdown hold-on-click pull-right">
-                                                    <li>
-                                                        <div class="btn-group btn-kpi-filter" data-toggle="buttons">
-                                                            <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
-                                                                <input type="radio" class="toggle"> Today </label>
-                                                            <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
-                                                                <input type="radio" class="toggle"> Week </label>
-                                                            <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
-                                                                <input type="radio" class="toggle"> Month </label>
-                                                        </div>
-                                                    </li>
+                                                <div class="icon actions" style="padding:0">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-circle blue btn-outline btn-sm" href="javascript:;" data-toggle="dropdown">
+                                                            <i class="fa fa-filter"></i> Filter
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu filter-dropdown hold-on-click pull-right">
+                                                            <li>
+                                                                <div class="btn-group btn-kpi-filter" data-toggle="buttons">
+                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                        <input type="radio" class="toggle"> Today </label>
+                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                        <input type="radio" class="toggle"> Week </label>
+                                                                    <label class="btn btn-transparent blue-oleo btn-outline btn-sm-filter col-md-4">
+                                                                        <input type="radio" class="toggle"> Month </label>
+                                                                </div>
+                                                            </li>
 
-                                                    <li>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" placeholder="Filter...">
-                                                            <span class="input-group-btn">
-                                                                <a class="btn default" data-toggle="modal" href="#" data-target="#responsive">
-                                                                    <i class="icon-magnifier"></i>
-                                                                </a>
-                                                            </span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-group">
-                                                            <select class="form-control select2">
-                                                                <option></option>
-                                                                <optgroup label="Alaskan">
-                                                                    <option value="AK">Alaska</option>
-                                                                    <option value="HI" disabled="disabled">Hawaii</option>
-                                                                </optgroup>
-                                                                <optgroup label="Pacific Time Zone">
-                                                                    <option value="CA">California</option>
-                                                                    <option value="NV">Nevada</option>
-                                                                    <option value="OR">Oregon</option>
-                                                                    <option value="WA">Washington</option>
-                                                                </optgroup>
-                                                                <optgroup label="Mountain Time Zone">
-                                                                    <option value="AZ">Arizona</option>
-                                                                    <option value="CO">Colorado</option>
-                                                                    <option value="ID">Idaho</option>
-                                                                    <option value="MT">Montana</option>
-                                                                    <option value="NE">Nebraska</option>
-                                                                    <option value="NM">New Mexico</option>
-                                                                    <option value="ND">North Dakota</option>
-                                                                    <option value="UT">Utah</option>
-                                                                    <option value="WY">Wyoming</option>
-                                                                </optgroup>
-                                                            </select>
-                                                        </div>
-                                                    </li>
-                                                    <li class="divider"> </li>
-                                                    <li>
-                                                        <a href="" class="btn btn-block btn-primary"> Apply </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                                            <li>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" placeholder="Filter...">
+                                                                    <span class="input-group-btn">
+                                                                        <a class="btn default" data-toggle="modal" href="#" data-target="#responsive">
+                                                                            <i class="icon-magnifier"></i>
+                                                                        </a>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-group">
+                                                                    <select class="form-control select2">
+                                                                        <option></option>
+                                                                        <optgroup label="Alaskan">
+                                                                            <option value="AK">Alaska</option>
+                                                                            <option value="HI" disabled="disabled">Hawaii</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Pacific Time Zone">
+                                                                            <option value="CA">California</option>
+                                                                            <option value="NV">Nevada</option>
+                                                                            <option value="OR">Oregon</option>
+                                                                            <option value="WA">Washington</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Mountain Time Zone">
+                                                                            <option value="AZ">Arizona</option>
+                                                                            <option value="CO">Colorado</option>
+                                                                            <option value="ID">Idaho</option>
+                                                                            <option value="MT">Montana</option>
+                                                                            <option value="NE">Nebraska</option>
+                                                                            <option value="NM">New Mexico</option>
+                                                                            <option value="ND">North Dakota</option>
+                                                                            <option value="UT">Utah</option>
+                                                                            <option value="WY">Wyoming</option>
+                                                                        </optgroup>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                            <li class="divider"> </li>
+                                                            <li>
+                                                                <a href="" class="btn btn-block btn-primary"> Apply </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="progress-info">
                                                 <div class="progress">
