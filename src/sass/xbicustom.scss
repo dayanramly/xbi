@@ -14,7 +14,15 @@
 		margin: 5px 1px 10px 1px;
 	}
 }
-
+.reset-filter{
+	color: #C6C6C6;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover, &:active, &:focus{
+    	color: darken(#c6c6c6, 20%);
+    	text-decoration: none;
+    }
+}
 .grid-stack{
 	.grid-stack-item{
 		.ui-resizable-se{
