@@ -55,6 +55,14 @@ $('.open-bar').on('click', function(){
 	$('.open-bar').hide();
 });
 
+$('#sampleTable').dataTable( {
+	"sDom": 'Rlfrtip',
+	"headerContextMenu":true,
+	"oColReorder": {
+		"bAddFixed":false
+	}
+} );
+
 // var btnKpi= $('.btn-kpi-filter');
 // var grid = $('.grid-stack').data('gridstack');
 
