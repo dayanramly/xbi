@@ -14,19 +14,34 @@
 				}
 			}
 			.portlet-body{
-				.sidebar-search{
-					margin: 22px 10px;
-					.input-group{
-						input.form-control{	
-							background: transparent;
-							border-bottom: 1px solid #545454 !important;
-						}
-						.input-group-btn{
-							a{
-								i{
-									color: #ffffff;
+				.sidebar-search-wrapper{
+					.sidebar-search{
+						margin: 22px 10px;
+						.input-group{
+							input.form-control{	
+								background: transparent;
+								border-bottom: 1px solid #545454 !important;
+							}
+							.input-group-btn{
+								a{
+									i{
+										color: #ffffff;
+									}
 								}
 							}
+						}
+					}
+					.form-group-filter{
+						label{
+							color: #c6cdd4;
+						}
+						input.form-control{
+							background: transparent;
+							color: #ffffff;
+						}
+						.filter-select-dropdown{
+							background: transparent;
+							color: #ffffff;		
 						}
 					}
 				}

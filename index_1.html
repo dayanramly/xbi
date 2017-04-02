@@ -17,7 +17,7 @@
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/layouts/layout2/css/themes/dark.min.css" rel="stylesheet" type="text/css" id="style_color" />
@@ -260,7 +260,7 @@
                                 </div>
                                 <div class="portlet-body">
                                     <div class="sidebar-search-wrapper">
-                                        <form class="sidebar-search" action="page_general_search_3.html" method="POST">
+<!--                                         <div class="sidebar-search" action="page_general_search_3.html" method="POST">
                                             <a href="javascript:;" class="remove">
                                                 <i class="icon-close"></i>
                                             </a>
@@ -272,7 +272,49 @@
                                                     </a>
                                                 </span>
                                             </div>
-                                        </form>
+                                        </div> -->
+                                        <div class="form-group form-group-filter">
+                                            <label>Date From</label>
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="fa fa-calendar"></i>
+                                            </a>
+                                            <div class="input-group input-group-filter date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                                <input type="text" class="form-control" readonly>
+                                                <span class="input-group-btn">
+                                                    <button class="btn default" type="button">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group-filter">
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="fa fa-toggle-down"></i>
+                                            </a>
+                                            <label>Organization</label>
+                                            <select class="form-control input-group-filter filter-select-dropdown">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-filter">
+                                            <a href="javascript:;" class="open-bar">
+                                                <i class="icon-magnifier"></i>
+                                            </a>
+                                            <label>Input</label>
+                                            <a href="javascript:;" class="remove">
+                                                <i class="icon-close"></i>
+                                            </a>
+                                            <div class="input-group input-group-filter ">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-btn">
+                                                    <button class="btn default" type="button">
+                                                        <i class="icon-magnifier"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
