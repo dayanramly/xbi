@@ -16,12 +16,12 @@
 }
 .reset-filter{
 	color: #C6C6C6;
-    font-size: 16px;
-    font-weight: 600;
-    &:hover, &:active, &:focus{
-    	color: darken(#c6c6c6, 20%);
-    	text-decoration: none;
-    }
+	font-size: 16px;
+	font-weight: 600;
+	&:hover, &:active, &:focus{
+		color: darken(#c6c6c6, 20%);
+		text-decoration: none;
+	}
 }
 .grid-stack{
 	.grid-stack-item{
@@ -33,7 +33,28 @@
 		background-color: #ffffff;
 	}
 }
+// slickgrid
+.slickgrid-xbi{
+	.slick-header{
+		.slick-header-columns{
+			.slick-header-column{
+				height: 30px;
+				span{
+					&.slick-column-name{
 
+					}
+					&.slick-sort-indicator{
+
+					}
+				}
+				.slick-resizable-handle{
+					background: #cccccc;
+					width: 2px;
+				}
+			}
+		}
+	}
+}
 // filter on dropdown
 .btn-kpi-filter{
 	width: 100%;
@@ -523,7 +544,7 @@ Dashboard Stat 4
 							}
 						}
 					}
-					.form-group-filter{
+					.form-group-filter, .form-sidebar-filter-group{
 						.open-bar{
 							display: none;
 							padding: 10px 0;
@@ -539,7 +560,7 @@ Dashboard Stat 4
 						}
 					}
 
-					.form-group-filter{
+					.form-group-filter, .form-sidebar-filter-group{
 						padding: 5px 10px;
 						.remove {
 							display: none; 

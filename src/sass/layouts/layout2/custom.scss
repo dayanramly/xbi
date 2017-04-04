@@ -31,17 +31,10 @@
 							}
 						}
 					}
-					.form-group-filter{
+					.form-group-filter, .form-sidebar-filter-group{
+						padding: 5px 0px !important;
 						label{
 							color: #c6cdd4;
-						}
-						input.form-control{
-							background: transparent;
-							color: #ffffff;
-						}
-						.filter-select-dropdown{
-							background: transparent;
-							color: #ffffff;		
 						}
 					}
 				}
