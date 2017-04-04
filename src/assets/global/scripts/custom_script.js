@@ -63,18 +63,23 @@ $('#sampleTable').dataTable( {
 	}
 } );
 
+function DummyLinkFormatter(row, cell, value, columnDef, dataContext) {
+	return '<a href="#">' + value + '</a>';
+}
+
 var grid;
 var columnsSortable = [
-{id: "title", name: "Title", field: "title", width: 200, resizable:true,sortable: true},
-{id: "duration", name: "Duration", field: "duration", width: 100, resizable:true, sortable: true},
-{id: "%", name: "% Complete", field: "percentComplete", width: 100, resizable:true, sortable: true},
-{id: "start", name: "Start", field: "start", width: 100, resizable:true, sortable: true},
-{id: "finish", name: "Finish", field: "finish", width: 100, resizable:true, sortable: true},
-{id: "effort-driven", name: "Effort Driven", field: "effortDriven", width: 100, resizable:true, sortable: true}
+{id: "title", name: "Title", field: "title", width: 200, sortable: true, formatter: DummyLinkFormatter},
+{id: "duration", name: "Duration", field: "duration", width: 100, sortable: true},
+{id: "%", name: "% Complete", field: "percentComplete", width: 100, sortable: true},
+{id: "start", name: "Start", field: "start", width: 100, sortable: true},
+{id: "finish", name: "Finish", field: "finish", width: 100, sortable: true},
+{id: "effort-driven", name: "Effort Driven", field: "effortDriven", width: 100, sortable: true}
 ];
 
+
 var dataFull = [];
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 50; i++) {
 	dataFull[i] = {
       id: 'id_' + i, // needed for DataView
       title: "Task " + i,
@@ -91,7 +96,7 @@ var data;
 
  // Example 2: fewer rows, no vertical scrollbar
  columns = columnsSortable.slice();
- data = dataFull.slice().splice(0, 5);
+ data = dataFull.slice();
  $("#myGrid").slickgrid({
  	columns: columns,
  	data: data,
