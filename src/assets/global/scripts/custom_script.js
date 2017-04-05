@@ -69,12 +69,12 @@ function DummyLinkFormatter(row, cell, value, columnDef, dataContext) {
 
 var grid;
 var columnsSortable = [
-{id: "title", name: "Title", field: "title", width: 200, sortable: true, formatter: DummyLinkFormatter},
-{id: "duration", name: "Duration", field: "duration", width: 100, sortable: true},
-{id: "%", name: "% Complete", field: "percentComplete", width: 100, sortable: true},
-{id: "start", name: "Start", field: "start", width: 100, sortable: true},
-{id: "finish", name: "Finish", field: "finish", width: 100, sortable: true},
-{id: "effort-driven", name: "Effort Driven", field: "effortDriven", width: 100, sortable: true}
+{id: "title", name: "Title", field: "title", sortable: true, formatter: DummyLinkFormatter, rerenderOnResize: true},
+{id: "duration", name: "Duration", field: "duration", sortable: true, rerenderOnResize: true},
+{id: "%", name: "% Complete", field: "percentComplete", sortable: true, rerenderOnResize: true},
+{id: "start", name: "Start", field: "start", sortable: true, rerenderOnResize: true},
+{id: "finish", name: "Finish", field: "finish", sortable: true, rerenderOnResize: true},
+{id: "effort-driven", name: "Effort Driven", field: "effortDriven", sortable: true, rerenderOnResize: true}
 ];
 
 
@@ -105,7 +105,8 @@ var data;
  		enableColumnReorder: true,
  		forceFitColumns: true,
  		syncColumnCellResize: true,
- 		rowHeight: 40
+ 		rerenderOnResize: true,
+ 		rowHeight: 36
  	},
     // handleCreate takes some extra options:
     sortCol: undefined,
@@ -125,6 +126,7 @@ var data;
       	var x = a[sortCol], y = b[sortCol];
       	return (x == y ? 0 : (x > y ? 1 : -1));
       }
+
       grid.onSort.subscribe(function (e, args) {
       	sortDir = args.sortAsc;
       	sortCol = args.sortCol.field;
@@ -143,14 +145,10 @@ var data;
        dataView.setItems(o.data);
        dataView.endUpdate();
 
-      grid.resizeCanvas(); // XXX Why is this needed? A possible bug?
-                           // If this is missing, the grid will have
-                           // a horizontal scrollbar, and the vertical
-                           // scrollbar cannot be moved. A column reorder
-                           // action fixes the situation.
+       grid.resizeCanvas();
 
-                       }
-                   });
+   }
+});
 
 // var columns = [
 // {id: "title", name: "Title", field: "title"},

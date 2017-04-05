@@ -38,18 +38,49 @@
 	.slick-header{
 		.slick-header-columns{
 			.slick-header-column{
-				height: 30px;
+				height: 38px;
+				border: 1px solid #e7ecf1;
+				border-bottom: 0;
+				line-height: 25px;
 				span{
 					&.slick-column-name{
-
+						text-shadow: none;
 					}
 					&.slick-sort-indicator{
 
 					}
 				}
-				.slick-resizable-handle{
-					background: #cccccc;
-					width: 2px;
+			}
+		}
+	}
+	.slick-viewport{
+		.grid-canvas{
+			.slick-row{
+				&.even{
+					.slick-cell{
+						background: #fbfcfd!important;
+					}
+				}
+				&.odd{
+
+				}
+				&:last-child{
+					.slick-cell{
+						border-bottom: 1px solid #e7ecf1;
+					}
+				}
+				.slick-cell{
+					min-height: 36px;
+					padding-top: 7px;
+					padding-bottom: 7px;
+					border: 1px solid #e7ecf1;
+					border-bottom: 0;
+					&:not(first-child){
+						border-left: 0;
+					}
+					&:first-child{
+						border-left: 1px solid #e7ecf1;
+					}
 				}
 			}
 		}
