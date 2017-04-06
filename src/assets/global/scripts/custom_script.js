@@ -63,31 +63,40 @@ $('#sampleTable').dataTable( {
 	}
 } );
 
-function DummyLinkFormatter(row, cell, value, columnDef, dataContext) {
-	return '<a href="#">' + value + '</a>';
-}
+// function DummyLinkFormatter(row, cell, value, columnDef, dataContext) {
+// 	return '<a href="#">' + value + '</a>';
+// }
 
 var grid;
 var columnsSortable = [
-{id: "title", name: "Title", field: "title", sortable: true, formatter: DummyLinkFormatter, rerenderOnResize: true},
-{id: "duration", name: "Duration", field: "duration", sortable: true, rerenderOnResize: true},
-{id: "%", name: "% Complete", field: "percentComplete", sortable: true, rerenderOnResize: true},
-{id: "start", name: "Start", field: "start", sortable: true, rerenderOnResize: true},
-{id: "finish", name: "Finish", field: "finish", sortable: true, rerenderOnResize: true},
-{id: "effort-driven", name: "Effort Driven", field: "effortDriven", sortable: true, rerenderOnResize: true}
+{id: "id", name: "", field: "id", width: 20, sortable: true},
+{id: "customer_1", name: "Customer 1", field: "customer_1", sortable: true},
+{id: "customer_2", name: "Customer 2", field: "customer_2", sortable: true},
+{id: "customer_3", name: "Customer 3", field: "customer_3", sortable: true},
+{id: "address_1", name: "Address 1", field: "address_1", sortable: true},
+{id: "address_2", name: "Address 2", field: "address_2", sortable: true},
+{id: "category", name: "Category Cat", field: "category", sortable: true},
+{id: "city", name: "City", field: "city", sortable: true},
+{id: "country", name: "Country", field: "country", sortable: true},
+{id: "county", name: "County", field: "county", sortable: true},
+{id: "state", name: "State", field: "state", sortable: true}
 ];
 
 
 var dataFull = [];
 for (var i = 0; i < 50; i++) {
 	dataFull[i] = {
-      id: 'id_' + i, // needed for DataView
-      title: "Task " + i,
-      duration: "5 days",
-      percentComplete: Math.round(Math.random() * 100),
-      start: "01/01/2009",
-      finish: "01/05/2009",
-      effortDriven: (i % 5 == 0)
+      id: i, // needed for DataView
+      customer_1: "100" + i,
+      customer_2: "American " + i,
+      customer_3: "Check",
+      address_1: "East Stret" + i,
+      address_2: i,
+      category: Math.round(Math.random() * 100),
+      city: "01/01/2009",
+      country: "01/05/2009",
+      county: (i % 5 == 0),
+      state: "NZ"
   };
 }
 
