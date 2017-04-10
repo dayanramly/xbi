@@ -69,7 +69,7 @@ $('#sampleTable').dataTable( {
 
 var grid;
 var columnsSortable = [
-{id: "id", name: "", field: "id", width: 20, sortable: true},
+{id: "id", name: "", field: "id", width: 25, sortable: true},
 {id: "customer_1", name: "Customer 1", field: "customer_1", sortable: true},
 {id: "customer_2", name: "Customer 2", field: "customer_2", sortable: true},
 {id: "customer_3", name: "Customer 3", field: "customer_3", sortable: true},
@@ -84,7 +84,7 @@ var columnsSortable = [
 
 
 var dataFull = [];
-for (var i = 0; i < 50; i++) {
+for (var i = 0; i < 100; i++) {
 	dataFull[i] = {
       id: i, // needed for DataView
       customer_1: "100" + i,
@@ -103,7 +103,6 @@ for (var i = 0; i < 50; i++) {
 var columns;
 var data;
 
- // Example 2: fewer rows, no vertical scrollbar
  columns = columnsSortable.slice();
  data = dataFull.slice();
  $("#myGrid").slickgrid({
@@ -117,75 +116,58 @@ var data;
  		rerenderOnResize: true,
  		rowHeight: 36
  	},
+
     // handleCreate takes some extra options:
     sortCol: undefined,
     sortDir: true,
     handleCreate: function () {
     	var o = this.wrapperOptions;
 
-      // configure grid with client-side data view
-      var dataView = new Slick.Data.DataView();
-      var grid = new Slick.Grid(this.element, dataView,
-      	o.columns, o.slickGridOptions);
+	    // configure grid with client-side data view
+	    var dataView = new Slick.Data.DataView();
+	    var grid = new Slick.Grid(this.element, dataView,
+	      	o.columns, o.slickGridOptions);
 
-      // sorting
-      var sortCol = o.sortCol;
-      var sortDir = o.sortDir;
-      function comparer(a, b) {
-      	var x = a[sortCol], y = b[sortCol];
-      	return (x == y ? 0 : (x > y ? 1 : -1));
-      }
+	    var pager = new Slick.Controls.Pager(dataView, grid, $("#pager"));
 
-      grid.onSort.subscribe(function (e, args) {
-      	sortDir = args.sortAsc;
-      	sortCol = args.sortCol.field;
-      	dataView.sort(comparer, sortDir);
-      	grid.invalidateAllRows();
-      	grid.render();
-      });
+	    // wire up model events to drive the grid
+	    dataView.onRowCountChanged.subscribe(function (e, args) {
+	      grid.updateRowCount();
+	      grid.render();
+	    });
 
-      // set the initial sorting to be shown in the header
-      if (sortCol) {
-      	grid.setSortColumn(sortCol, sortDir);
-      }
+	    dataView.onRowsChanged.subscribe(function (e, args) {
+	      grid.invalidateRows(args.rows);
+	      grid.render();
+	    });
 
-       // initialize the model after all the events have been hooked up
-       dataView.beginUpdate();
-       dataView.setItems(o.data);
-       dataView.endUpdate();
+    	// sorting
+    	var sortCol = o.sortCol;
+    	var sortDir = o.sortDir;
 
-       grid.resizeCanvas();
+    	function comparer(a, b) {
+    		var x = a[sortCol], y = b[sortCol];
+    		return (x == y ? 0 : (x > y ? 1 : -1));
+    	}
 
-   }
+    	grid.onSort.subscribe(function (e, args) {
+    		sortDir = args.sortAsc;
+    		sortCol = args.sortCol.field;
+    		dataView.sort(comparer, sortDir);
+    		grid.invalidateAllRows();
+    		grid.render();
+    	});
+
+    	// set the initial sorting to be shown in the header
+    	if (sortCol) {
+    		grid.setSortColumn(sortCol, sortDir);
+    	}
+
+    	 // initialize the model after all the events have been hooked up
+    	 dataView.beginUpdate();
+    	 dataView.setItems(o.data);
+    	 dataView.endUpdate();
+
+    	 grid.resizeCanvas();
+    }
 });
-
-// var columns = [
-// {id: "title", name: "Title", field: "title"},
-// {id: "duration", name: "Duration", field: "duration"},
-// {id: "%", name: "% Complete", field: "percentComplete"},
-// {id: "start", name: "Start", field: "start"},
-// {id: "finish", name: "Finish", field: "finish"},
-// {id: "effort-driven", name: "Effort Driven", field: "effortDriven"}
-// ];
-// var options = {
-// 	enableCellNavigation: true,
-// 	enableColumnReorder: true,
-// 	forceFitColumns: true,
-// 	rowHeight: 50
-// };
-
-// $(function () {
-// 	var data = [];
-// 	for (var i = 0; i < 50; i++) {
-// 		data[i] = {
-// 			title: "Task " + i,
-// 			duration: "5 days",
-// 			percentComplete: Math.round(Math.random() * 100),
-// 			start: "01/01/2009",
-// 			finish: "01/05/2009",
-// 			effortDriven: (i % 5 == 0)
-// 		};
-// 	}
-
-// 	grid = new Slick.Grid("#myGrid", data, columns, options);
-// });
