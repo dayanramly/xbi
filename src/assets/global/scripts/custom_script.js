@@ -28,6 +28,7 @@ $('.filter-dropdown').click(function(e) {
 		$($(e.target).data('target')).modal("show")
 	}
 });
+
 if(localStorage.fullscreen){
 	fullScreen();
 } else {
@@ -62,6 +63,15 @@ $('#sampleTable').dataTable( {
 		"bAddFixed":false
 	}
 } );
+
+Mousetrap.bind(['command+k', 'ctrl+k'], function(e) {
+	if(localStorage.getItem("fullscreen") === null){
+		fullScreen();
+	} else {
+		unfullScreen();
+	}
+	return false;
+});
 
 // function DummyLinkFormatter(row, cell, value, columnDef, dataContext) {
 // 	return '<a href="#">' + value + '</a>';
@@ -103,19 +113,19 @@ for (var i = 0; i < 100; i++) {
 var columns;
 var data;
 
- columns = columnsSortable.slice();
- data = dataFull.slice();
- $("#myGrid").slickgrid({
- 	columns: columns,
- 	data: data,
- 	slickGridOptions: {
- 		enableCellNavigation: true,
- 		enableColumnReorder: true,
- 		forceFitColumns: true,
- 		syncColumnCellResize: true,
- 		rerenderOnResize: true,
- 		rowHeight: 36
- 	},
+columns = columnsSortable.slice();
+data = dataFull.slice();
+$("#myGrid").slickgrid({
+	columns: columns,
+	data: data,
+	slickGridOptions: {
+		enableCellNavigation: true,
+		enableColumnReorder: true,
+		forceFitColumns: true,
+		syncColumnCellResize: true,
+		rerenderOnResize: true,
+		rowHeight: 36
+	},
 
     // handleCreate takes some extra options:
     sortCol: undefined,
@@ -126,19 +136,19 @@ var data;
 	    // configure grid with client-side data view
 	    var dataView = new Slick.Data.DataView();
 	    var grid = new Slick.Grid(this.element, dataView,
-	      	o.columns, o.slickGridOptions);
+	    	o.columns, o.slickGridOptions);
 
 	    var pager = new Slick.Controls.Pager(dataView, grid, $("#pager"));
 
 	    // wire up model events to drive the grid
 	    dataView.onRowCountChanged.subscribe(function (e, args) {
-	      grid.updateRowCount();
-	      grid.render();
+	    	grid.updateRowCount();
+	    	grid.render();
 	    });
 
 	    dataView.onRowsChanged.subscribe(function (e, args) {
-	      grid.invalidateRows(args.rows);
-	      grid.render();
+	    	grid.invalidateRows(args.rows);
+	    	grid.render();
 	    });
 
     	// sorting
@@ -169,5 +179,5 @@ var data;
     	 dataView.endUpdate();
 
     	 grid.resizeCanvas();
-    }
-});
+    	}
+    });
