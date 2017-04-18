@@ -121,7 +121,7 @@ $("#myGrid").slickgrid({
 	slickGridOptions: {
 		enableCellNavigation: true,
 		enableColumnReorder: true,
-		forceFitColumns: true,
+		forceFitColumns: false,
 		syncColumnCellResize: true,
 		rerenderOnResize: true,
 		rowHeight: 36

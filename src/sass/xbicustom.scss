@@ -125,10 +125,15 @@
 .btn-kpi-filter{
 	width: 100%;
 	.btn-sm-filter{
-		&.focus{
+		&.focus, &.active{
 			border-color: #94a0b2;
 			color: #fff;
 			background-color: #94a0b2;
+		}
+		&.active{
+			&:hover{
+				background-color: darken(#94a0b2, 10%);
+			}
 		}
 		&:nth-child(n+4){
 			margin-top: -1px;
@@ -475,15 +480,19 @@ Dashboard Stat 4
 .sm-portlet-sortable{
 	padding: 0px !important;
 	margin-bottom: 3px;
+	.portlet-title{
+		border-bottom: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		.sm-sortable-dashboard{
+			margin-bottom: 0;
+			.display{
+				
+			}
+		}
+	}
 }
-.sm-portlet-sortable .portlet-title{
-	border-bottom: 0;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-.sm-portlet-sortable .portlet-title .sm-sortable-dashboard{
-	margin-bottom: 0;
-}
+
 .page-sidebar-closed .page-content-wrapper .page-content-fullscreen{
 	margin-left: 0 !important;
 }
